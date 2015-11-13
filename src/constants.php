@@ -1,6 +1,6 @@
 <?php
 /**
- * PHP: Nelson Martell Html Helpers Library file
+ * PHP: Nelson Martell Utilities Library file
  *
  * Content:
  * - Global constants definitions.
@@ -18,6 +18,14 @@
  * */
 
 namespace NelsonMartell\Utilities\Internal;
+
+/**
+ * Short name for DIRECTORY_SEPARATOR constant.
+ *
+ * @constant string
+ * @since    v0.1.0
+ */
+const DS = DIRECTORY_SEPARATOR;
 
 /**
  * Gettext domain for messages.

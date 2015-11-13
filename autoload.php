@@ -20,11 +20,9 @@
 
 namespace NelsonMartell\Utilities\Internal;
 
-const DS = DIRECTORY_SEPARATOR;
-
-require_once __DIR__.DS.'src'.DS.'constants.php';
+require_once __DIR__.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'constants.php';
 require_once __DIR__.DS.'src'.DS.'functions.php';
 require_once __DIR__.DS.'config'.DS.'bootstrap.php';
 require_once __DIR__.DS.'config'.DS.'autoloader.php';
 
-spl_autoload_register('NelsonMartell\Utilities\Internal\autoload');
+spl_autoload_register(__NAMESPACE__.'\autoload', true, true);
