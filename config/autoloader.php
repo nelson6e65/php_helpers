@@ -28,7 +28,7 @@ function autoload($class)
 
     if ($classArray[0] == 'NelsonMartell') {
         unset($classArray[0]);
-        if ($classArray[1] == 'Utility') {
+        if ($classArray[1] == 'Utilities') {
             $classArray[1] = 'src'; // Sólo deja 'src'
         } else {
             // Is not a 'NelsonMartell\Utilities' namespace.
@@ -39,7 +39,7 @@ function autoload($class)
         return;
     }
 
-    $path = sprintf('%s'.DS.'%s.php', __DIR__, implode(DS, $classArray));
+    $path = sprintf('%s'.DS.'%s.php', __DIR__.DS.'..', implode(DS, $classArray));
 
     if (is_file($path)) {
         require_once($path);
