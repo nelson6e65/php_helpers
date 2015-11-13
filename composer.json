@@ -1,0 +1,52 @@
+{
+	"name": "nelson6e65/utilities",
+	"description": "PHP: Nelson Martell Utilities Library",
+	"type": "library",
+	"keywords": ["library", "nml", "utilities", "helper", "html"],
+	"homepage": "http://nelson6e65.github.io/php_utilities",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nelson Martell",
+			"email": "nelson6e65-dev@yahoo.es",
+			"homepage": "http://nelson6e65.github.io",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/nelson6e65/php_utilities/issues",
+		"forum": "http://stackoverflow.com/tags/php_utilities",
+		"gitter": "https://gitter.im/nelson6e65/php_utilities",
+		"source": "https://github.com/nelson6e65/php_utilities",
+		"wiki": "https://github.com/nelson6e65/php_utilities/wiki",
+		"docs": "http://nelson6e65.github.io/php_utilities/api"
+	},
+	"require": {
+		"php": ">=5.5.0",
+		"nelson6e65/php_nml": ">=0.5"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^4.8",
+		"apigen/apigen": "^4.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"NelsonMartell\\Utilities\\": "src"
+		},
+		"files": [
+			"src/constants.php",
+			"src/functions.php",
+			"config/bootstrap.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"NelsonMartell\\Utilities\\Test\\": "tests"
+		}
+	},
+	"extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
